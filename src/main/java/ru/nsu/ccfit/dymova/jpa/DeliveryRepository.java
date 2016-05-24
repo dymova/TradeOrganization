@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import ru.nsu.ccfit.dymova.entities.Delivery;
 import ru.nsu.ccfit.dymova.entities.Good;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -11,4 +12,7 @@ import java.util.List;
  */
 public interface DeliveryRepository extends JpaRepository<Delivery, Long> {
     List<Delivery> findAllByGood(Good good);
+
+
+    List<Delivery> findProviderByGoodAndCountAndDateBetween(Good good, Integer count, Date date1, Date date2);
 }

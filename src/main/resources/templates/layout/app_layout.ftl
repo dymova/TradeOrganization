@@ -44,14 +44,16 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            <li><a href="/services">Services</a></li>
+            <li><a href="/entity/provider">Providers</a></li>
             <li><a href="/entity/trading_place">Trading places</a></li>
-            <li><a href="/entity/consumer">Consumers</a></li>
-            <li><a href="/entity/delivery">Deliveries</a></li>
-            <li><a href="/entity/good">Goods</a></li>
-            <li><a href="/entity/order">Orders</a></li>
-            <li><a href="/entity/sale">Sales</a></li>
-            <li><a href="/entity/salesmen">Salespeople</a></li>
-            <li><a href="/entity/trading_place_type">Trading place types</a></li>
+            <#--<li><a href="/entity/consumer">Consumers</a></li>-->
+            <#--<li><a href="/entity/delivery">Deliveries</a></li>-->
+            <#--<li><a href="/entity/good">Goods</a></li>-->
+            <#--<li><a href="/entity/order">Orders</a></li>-->
+            <#--<li><a href="/entity/sale">Sales</a></li>-->
+            <#--<li><a href="/entity/salesmen">Salespeople</a></li>-->
+            <#--<li><a href="/entity/trading_place_type">Trading place types</a></li>-->
           </ul>
         </div>
       </div>

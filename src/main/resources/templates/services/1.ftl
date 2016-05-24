@@ -1,26 +1,8 @@
 <@layout>
 <div id="header">
-    <h2 style="align-content: center">Trading places</h2>
+    <h2 style="align-content: center">Providers</h2>
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-
-    $('button.remove').click(function() {
-        $.ajax({
-            type: "DELETE",
-            url: "/entity/trading_place/" + $(this).attr('tradingPlaceId'),
-            data: "",
-            success: function(msg){
-                alert("Data Deleted: " + msg);
-            }
-        });
-    });
-
-    });
-
-
-</script>
 <div id="content">
     <fieldset>
         <form name="addForm" role="form" method="post">
@@ -47,15 +29,16 @@
         </tr>
         </thead>
         <tbody>
-        <#list model["tradingPlaces"] as tradingPlace>
+        <#--<#list model["tradingPlaces"] as tradingPlace>-->
+            <#list tradingPlaces as tradingPlace>
             <tr>
                 <td>${tradingPlace.name}</td>
                 <td>${tradingPlace.type.name}</td>
                 <td><button type="button" class="btn btn-danger remove" tradingPlaceId="${tradingPlace.id}">delete</button></td>
-                <#--<td><button type="button" class="btn btn-danger remove" tradingPlaceId="${tradingPlace.id}" onclick="removeElement(${tradingPlace.id})">delete</button></td>-->
-                <td><button type="button" class="btn btn-info">edit</button></td>
+            <#--<td><button type="button" class="btn btn-danger remove" tradingPlaceId="${tradingPlace.id}" onclick="removeElement(${tradingPlace.id})">delete</button></td>-->
+                <td><button type="button" class="btn btn-info edit" tradingPlaceid="${tradingPlace.id} ">edit</button></td>
             </tr>
-        </#list>
+            </#list>
         </tbody>
     </table>
 
