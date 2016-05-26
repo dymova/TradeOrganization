@@ -47,8 +47,8 @@
             <li><a href="/services">Services</a></li>
             <li><a href="/entity/provider">Providers</a></li>
             <li><a href="/entity/trading_place">Trading places</a></li>
-            <#--<li><a href="/entity/consumer">Consumers</a></li>-->
-            <#--<li><a href="/entity/delivery">Deliveries</a></li>-->
+            <li><a href="/entity/consumer">Consumers</a></li>
+            <li><a href="/entity/delivery">Deliveries</a></li>
             <#--<li><a href="/entity/good">Goods</a></li>-->
             <#--<li><a href="/entity/order">Orders</a></li>-->
             <#--<li><a href="/entity/sale">Sales</a></li>-->

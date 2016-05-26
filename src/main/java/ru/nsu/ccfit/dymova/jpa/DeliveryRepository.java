@@ -11,8 +11,8 @@ import java.util.List;
  * Created by nastya on 16.05.16.
  */
 public interface DeliveryRepository extends JpaRepository<Delivery, Long> {
-    List<Delivery> findAllByGood(Good good);
-
 
     List<Delivery> findProviderByGoodAndCountAndDateBetween(Good good, Integer count, Date date1, Date date2);
+
+    List<Delivery> findByGoodAndProviderAndDateBetween(Long goodId, Long providerId, Date date1, Date date2);
 }

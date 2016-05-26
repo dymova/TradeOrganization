@@ -5,4 +5,5 @@ import ru.nsu.ccfit.dymova.entities.Consumer;
 
 public interface ConsumerRepository extends JpaRepository<Consumer, Long> {
 
+    Consumer findByName(String name);
 }

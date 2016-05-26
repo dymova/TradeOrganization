@@ -1,13 +1,13 @@
 <@layout>
 <div id="header">
-    <h2 style="align-content: center">Providers</h2>
+    <h2 style="align-content: center">Consumers</h2>
 </div>
 <div id="content">
     <fieldset>
         <form name="addForm" role="form" method="post">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required value=${providerName}>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required value=${consumerName}>
             </div>
             <button type="submit" class="btn btn-default">Save</button>
         </form>
